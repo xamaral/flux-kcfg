@@ -4,6 +4,8 @@ services:
 deploy:
   provider: script
   script: ./push.sh
+  on:
+    tags: true
 env:
   global:
   - secure: ALg19S0KHj8+89//R0G8Vpyr1UTrelb00mvDqX+SH0uIkF/w8ZHmcUApP08P33j0f+NbZZ91q3u4LLRlTVXaFxRsjHIQABfHpNAknEAwCYBM+tIb6ePtvYXLa+ppRNHWJ4i/fMBCvc2kQ95SWZUIDqlwfchUQSCUL0nFF3HuwTlseV8Um5APuuUmt9Gc9vPT6qj/LHtFwc/ZQfZE3oyezwU1WNn0io5WPV8qV1hip3R5JQRfE+dquMYgOTo8vRwEUFnCumN2Z/5523CMneR1pq5NG2jcmpDx4eP+XB/nodqb53aqBJnJtM1SETwf8zvAtxmc1mCbYD4vgatJyLSW41iYYcHZ4iLk6raNDQvvw5Vqq93RndOfd/IA059VmWLSakn6yJaOCyuh9EDoK+cL8vcmloWXSucxiv/z7ppNOg5iIpHspetyc7LINQkm2pt4lpBmyI4Ie3Fg1DOEWux6129nzhbuoDwv9RMUAwSUhRtsTbJDC0DRAtZ4AK2z7EAp0l+aY8Su57IcX4jhqIkZoqXjYaTToI11YQ3238Lk9nGZ0Op25rUfCXLSsbBjMdv4rdo6ZSbc+UwMRlHiBvqsrABODjStuurvgh6tmAmvq+kGsG4u4tsTK2gzZ1GHX/GP1WpdKRsN2rWTZAew+sIucNqQQ80cAjGOSVYQtbFSvoc=
