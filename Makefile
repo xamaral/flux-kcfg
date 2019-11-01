@@ -12,6 +12,7 @@ docker:
 
 push: docker
 	docker push $(NAME):$(GIT_SHA)
+	docker push $(NAME):$(GIT_TAG)
 	docker push $(NAME):latest
 
 .PHONY: docker push
