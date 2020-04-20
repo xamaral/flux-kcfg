@@ -1,4 +1,4 @@
-FROM weaveworks/flux:1.19.0
+FROM fluxcd/flux:1.19.0
 
 RUN /sbin/apk add --update make
 
